@@ -28,15 +28,6 @@ function hablar(nombre) {
     
 }
 
-function conversacion(nombre, veces, callback) {
-    if (veces > 0) {
-        hablar(function () {
-            conversacion(nombre, --veces, callback);
-        })
-    } else {
-        adios(nombre, callback);
-    }
-}
 
 // ---
 console.log('iniciando el proceso');
